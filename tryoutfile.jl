@@ -1,3 +1,7 @@
+using Printf
+using Statistics
+
+
 x = "alpha";
 y = "beta";
 
@@ -19,8 +23,7 @@ myInt = parse(Int, "2020") #convert strings to integers or floats
 
 myString = string(245) #convert nums into strings
 
-neMyList = parse.(Float, ["1","2"]) #parse over an array
-
+#
 #=
 myData = convert(Array{Float64,2},readdlm(myinputfile,'\t')[2:end,4:end]); # skip the first 1 row and the first 3 columns
  How to import data to a matrix using -- standard library package
@@ -30,4 +33,16 @@ myData = convert(Array{Float64,2},readdlm(myinputfile,'\t')[2:end,4:end]); # ski
 
 #typical control flow: (for, while, if/else, do)
 
-for
+#println()
+#typeof()
+
+#accuracy to 14 digits --> increase precition with BigFloat or BigInt
+
+c2 = Char(120)
+println(c2)
+
+i1 = UInt8(trunc(3.2412))
+println(i1)
+
+f1 = parse(Float64, "1")
+println(f1)
